@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="css/try-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' id='wp-block-library-css'
+      href='https://modern.b-cdn.net/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' type='text/css'
+      media='all' />
+    <style id='wp-block-library-theme-inline-css' type='text/css'>
+      .wp-block-audio figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .wp-block-audio figcaption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-audio {
+        margin: 0 0 1em
+      }
+    
+      .wp-block-code {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Menlo, Consolas, monaco, monospace;
+        padding: .8em 1em
+      }
+    
+      .wp-block-embed figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .wp-block-embed figcaption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-embed {
+        margin: 0 0 1em
+      }
+    
+      .blocks-gallery-caption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .blocks-gallery-caption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-image figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .wp-block-image figcaption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-image {
+        margin: 0 0 1em
+      }
+    
+      .wp-block-pullquote {
+        border-top: 4px solid;
+        border-bottom: 4px solid;
+        margin-bottom: 1.75em;
+        color: currentColor
+      }
+    
+      .wp-block-pullquote__citation,
+      .wp-block-pullquote cite,
+      .wp-block-pullquote footer {
+        color: currentColor;
+        text-transform: uppercase;
+        font-size: .8125em;
+        font-style: normal
+      }
+    
+      .wp-block-quote {
+        border-left: .25em solid;
+        margin: 0 0 1.75em;
+        padding-left: 1em
+      }
+    
+      .wp-block-quote cite,
+      .wp-block-quote footer {
+        color: currentColor;
+        font-size: .8125em;
+        position: relative;
+        font-style: normal
+      }
+    
+      .wp-block-quote.has-text-align-right {
+        border-left: none;
+        border-right: .25em solid;
+        padding-left: 0;
+        padding-right: 1em
+      }
+    
+      .wp-block-quote.has-text-align-center {
+        border: none;
+        padding-left: 0
+      }
+    
+      .wp-block-quote.is-large,
+      .wp-block-quote.is-style-large,
+      .wp-block-quote.is-style-plain {
+        border: none
+      }
+    
+      .wp-block-search .wp-block-search__label {
+        font-weight: 700
+      }
+    
+      .wp-block-search__button {
+        border: 1px solid #ccc;
+        padding: .375em .625em
+      }
+    
+      :where(.wp-block-group.has-background) {
+        padding: 1.25em 2.375em
+      }
+    
+      .wp-block-separator.has-css-opacity {
+        opacity: .4
+      }
+    
+      .wp-block-separator {
+        border: none;
+        border-bottom: 2px solid;
+        margin-left: auto;
+        margin-right: auto
+      }
+    
+      .wp-block-separator.has-alpha-channel-opacity {
+        opacity: 1
+      }
+    
+      .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+        width: 100px
+      }
+    
+      .wp-block-separator.has-background:not(.is-style-dots) {
+        border-bottom: none;
+        height: 1px
+      }
+    
+      .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+        height: 2px
+      }
+    
+      .wp-block-table {
+        margin: "0 0 1em 0"
+      }
+    
+      .wp-block-table thead {
+        border-bottom: 3px solid
+      }
+    
+      .wp-block-table tfoot {
+        border-top: 3px solid
+      }
+    
+      .wp-block-table td,
+      .wp-block-table th {
+        word-break: normal
+      }
+    
+      .wp-block-table figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .wp-block-table figcaption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-video figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center
+      }
+    
+      .is-dark-theme .wp-block-video figcaption {
+        color: hsla(0, 0%, 100%, .65)
+      }
+    
+      .wp-block-video {
+        margin: 0 0 1em
+      }
+    
+      .wp-block-template-part.has-background {
+        padding: 1.25em 2.375em;
+        margin-top: 0;
+        margin-bottom: 0
+      }
+    </style>
+    <link rel='stylesheet' id='classic-theme-styles-css'
+      href='https://modern.b-cdn.net/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+      body {
+        --wp--preset--color--black: #394041;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #fff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--color--primary: #ea723d;
+        --wp--preset--color--orange-dark: #e0652e;
+        --wp--preset--color--secondary: #1ea69a;
+        --wp--preset--color--blue-dark: #0b8278;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 14px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 28px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--font-size--normal: 16px;
+        --wp--preset--font-size--huge: 36px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+      }
+    
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+    
+      body .is-layout-flow>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+    
+      body .is-layout-flow>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+    
+      body .is-layout-flow>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    
+      body .is-layout-constrained>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+    
+      body .is-layout-constrained>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+    
+      body .is-layout-constrained>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    
+      body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    
+      body .is-layout-constrained>.alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+    
+      body .is-layout-flex {
+        display: flex;
+      }
+    
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    
+      body .is-layout-flex>* {
+        margin: 0;
+      }
+    
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+    
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+    
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+    
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+    
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+    
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+    
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+    
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+    
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+    
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+    
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+    
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+    
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+    
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+    
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+    
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+    
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+    
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+    
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+    
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+    
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+    
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+    
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+    
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+    
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+    
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+    
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+    
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+    
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+    
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+    
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+    
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+    
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+    
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+    
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+    
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+    
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+    
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+    
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+    
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+    
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+    
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+    
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+    
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+    
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+    
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+    
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+    
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+    
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+    
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+    
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+    
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+    
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+    
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+    
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+    
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel='stylesheet' id='inspiry-stripe-payments-css'
+      href='https://modern.b-cdn.net/wp-content/plugins/inspiry-stripe-payments/public/css/inspiry-stripe-payments-public.css?ver=2.0.0'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='realhomes-currency-switcher-css'
+      href='https://modern.b-cdn.net/wp-content/plugins/realhomes-currency-switcher/public/css/realhomes-currency-switcher-public.css?ver=1.0.5'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='realhomes-paypal-payments-css'
+      href='https://modern.b-cdn.net/wp-content/plugins/realhomes-paypal-payments/public/css/realhomes-paypal-payments-public.css?ver=1.0.3'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='entypo-fonts-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/styles/css/entypo.min.css?ver=4.0.2'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='main-css-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/styles/css/main.min.css?ver=4.0.2'
+      type='text/css' media='all' />
+    <style id='main-css-inline-css' type='text/css'>
+      #scroll-top {
+        bottom: 40px;
+      }
+    </style>
+    <link rel='stylesheet' id='inspiry-google-fonts-css'
+      href='//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400i%2C600%2C600i%2C700%2C700i%7CLato%3A400%2C400i%2C700%2C700i%7CRoboto%3A400%2C400i%2C500%2C500i%2C700%2C700i%7CRubik%3A400%2C400i%2C500%2C500i%2C700%2C700i&#038;subset=latin%2Clatin-ext&#038;display=fallback&#038;ver=4.0.2'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-5-all-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/css/all.min.css?ver=5.13.1'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='rh-font-awesome-stars-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/common/font-awesome/css/fontawesome-stars.css?ver=1.0.0'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='vendors-css-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/common/optimize/vendors.css?ver=4.0.2' type='text/css'
+      media='all' />
+    <link rel='stylesheet' id='inspiry-currency-flags-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/common/css/currency-flags.min.css?ver=4.0.2'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='inspiry-frontend-style-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/common/css/frontend-styles.min.css?ver=4.0.2'
+      type='text/css' media='all' />
+    <link rel='stylesheet' id='parent-default-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/style.css?ver=6.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='parent-custom-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/styles/css/custom.css?ver=4.0.2'
+      type='text/css' media='all' />
+    
+    <style id='parent-custom-inline-css' type='text/css'>
+      #scroll-top.show {
+        bottom: 40px;
+      }
+    
+      @media print {
+    
+        #logo img,
+        .rh_logo img {
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+      }
+    
+    </style>
+    <link rel='stylesheet' id='demo-child-default-css'
+      href='https://modern.b-cdn.net/wp-content/themes/realhomes-demo-child/style.css?ver=0.0.1' type='text/css'
+      media='all' />
+    <script>
+      // Declare some common JS variables.
+      var ajaxurl = "https://modern.realhomes.io/wp-admin/admin-ajax.php";
+    </script>
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/jquery/jquery.min.js?ver=3.6.1'
+      id='jquery-core-js'></script>
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+      id='jquery-migrate-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/inspiry-stripe-payments/public/js/inspiry-stripe-payments-public.js?ver=2.0.0'
+      id='inspiry-stripe-payments-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/realhomes-currency-switcher/public/js/realhomes-currency-switcher-public.js?ver=1.0.5'
+      id='realhomes-currency-switcher-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/realhomes-paypal-payments/public/js/realhomes-paypal-payments-public.js?ver=1.0.3'
+      id='realhomes-paypal-payments-js'></script>
+    <link rel="https://api.w.org/" href="https://modern.realhomes.io/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://modern.realhomes.io/wp-json/wp/v2/property/45" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://modern.realhomes.io/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+      href="https://modern.b-cdn.net/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.1.1" />
+    <link rel='shortlink' href='https://modern.realhomes.io/?p=45' />
+    <link rel="alternate" type="application/json+oembed"
+      href="https://modern.realhomes.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmodern.realhomes.io%2Fproperty%2Fhome-in-merrick-way%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+      href="https://modern.realhomes.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmodern.realhomes.io%2Fproperty%2Fhome-in-merrick-way%2F&#038;format=xml" />
+    <script type="text/javascript">
+      var RecaptchaOptions = {
+        theme: 'custom',
+        custom_theme_widget: 'recaptcha_widget'
+      };
+    </script>
+    <meta name="generator"
+      content="Elementor 3.11.1; settings: css_print_method-internal, google_font-enabled, font_display-auto">
+    <link rel="icon" href="https://modern.b-cdn.net/wp-content/uploads/2021/09/cropped-site-icon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://modern.b-cdn.net/wp-content/uploads/2021/09/cropped-site-icon-192x192.png"
+      sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://modern.b-cdn.net/wp-content/uploads/2021/09/cropped-site-icon-180x180.png" />
+    <meta name="msapplication-TileImage"
+      content="https://modern.b-cdn.net/wp-content/uploads/2021/09/cropped-site-icon-270x270.png" />
+    <style type="text/css" id="wp-custom-css">
+      .property-payment-info form {
+        display: inline-block;
+      }
+    
+      .dashboard-posts-list .property-payment-info .paypal-button .real-btn {
+        padding: 10px 15px;
+      }
+    
+      .stripe-checkout-btn {
+        padding: 11px 15px;
+      }
+    </style>
+    
+    <script type="text/javascript">
+      var reCAPTCHAWidgetIDs = [];
+      var inspirySiteKey = '6LeOcdcUAAAAAIJAhrwkdJ0j_jV-LiUNayq4pScm';
+      var reCAPTCHAType = 'v3';
+
+      /**
+       * Render Google reCAPTCHA and store their widget IDs in an array
+       */
+      var loadInspiryReCAPTCHA = function () {
+        jQuery('.inspiry-google-recaptcha').each(function (index, el) {
+          var tempWidgetID;
+          if ('v3' === reCAPTCHAType) {
+            tempWidgetID = grecaptcha.ready(function () {
+              grecaptcha.execute(inspirySiteKey, {
+                action: 'homepage'
+              }).then(function (token) {
+                el.innerHTML = '';
+                el.insertAdjacentHTML('beforeend', '<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
+              });
+            });
+          } else {
+            tempWidgetID = grecaptcha.render(el, {
+              'sitekey': inspirySiteKey
+            });
+          }
+          reCAPTCHAWidgetIDs.push(tempWidgetID);
+        });
+      };
+
+      /**
+       * For Google reCAPTCHA reset
+       */
+      var inspiryResetReCAPTCHA = function () {
+        if ('v3' === reCAPTCHAType) {
+          loadInspiryReCAPTCHA();
+        } else {
+          if (typeof reCAPTCHAWidgetIDs != 'undefined') {
+            var arrayLength = reCAPTCHAWidgetIDs.length;
+            for (var i = 0; i < arrayLength; i++) {
+              grecaptcha.reset(reCAPTCHAWidgetIDs[i]);
+            }
+          }
+        }
+      };
+    </script>
+    <script>
+      (function () {
+        function maybePrefixUrlField() {
+          const value = this.value.trim()
+          if (value !== '' && value.indexOf('http') !== 0) {
+            this.value = 'http://' + value
+          }
+        }
+
+        const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+        for (let j = 0; j < urlFields.length; j++) {
+          urlFields[j].addEventListener('blur', maybePrefixUrlField)
+        }
+      })();
+    </script>
+
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/jquery/jquery.form.min.js?ver=4.3.0'
+      id='jquery-form-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/easy-real-estate/js/jquery.validate.min.js?ver=2.0.2'
+      id='jquery-validate-js'></script>
+    <script type='text/javascript' id='ere-frontend-js-extra'>
+      /* <![CDATA[ */
+      var ere_social_login_data = {
+        "ajax_url": "https:\/\/modern.realhomes.io\/wp-admin\/admin-ajax.php"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/easy-real-estate/js/ere-frontend.js?ver=2.0.2'
+      id='ere-frontend-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/easy-real-estate/includes/property-analytics/js/chart.min.js?ver=2.0.2'
+      id='chart.js-js'></script>
+    <script type='text/javascript' id='ere-property-analytics-js-extra'>
+      /* <![CDATA[ */
+      var property_analytics = {
+        "ajax_url": "https:\/\/modern.realhomes.io\/wp-admin\/admin-ajax.php",
+        "ajax_nonce": "76fc13c581",
+        "property_id": "45",
+        "border_color": "#1ea69a",
+        "background_color": "",
+        "data_label": "Property Views",
+        "chart_type": "line"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/plugins/easy-real-estate/includes/property-analytics/js/property-analytics.js?ver=2.0.2'
+      id='ere-property-analytics-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/vendors/progressbar/dist/progressbar.min.js?ver=1.0.1'
+      id='progress-bar-js'></script>
+    <script type='text/javascript'
+      src='//maps.google.com/maps/api/js?key=AIzaSyDjBC3OnsxljXPwNZEaZSnnclEI63ALj1Q&#038;language=en_US&#038;ver=6.1.1'
+      id='google-map-api-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/vendors/infobox.js?ver=1.1.9'
+      id='google-map-info-box-js'></script>
+    <script type='text/javascript' id='property-google-map-js-extra'>
+      /* <![CDATA[ */
+      var propertyMapData = {
+        "title": "Home in Merrick Way",
+        "propertyType": "<small>Single Family<\/small>",
+        "price": " $540,000 ",
+        "lat": "25.749806376111",
+        "lng": "-80.25448590517",
+        "thumb": "https:\/\/modern.realhomes.io\/wp-content\/uploads\/2017\/06\/exterior-05-488x326.jpg",
+        "icon": "https:\/\/modern.realhomes.io\/wp-content\/uploads\/2021\/02\/single-family-home.png",
+        "retinaIcon": "https:\/\/modern.realhomes.io\/wp-content\/uploads\/2021\/02\/single-family-home@2x.png",
+        "zoom": "15",
+        "type": "roadmap",
+        "marker_type": "pin",
+        "marker_color": "#ea723d"
+      };
+      var mapStuff = {
+        "closeIcon": "https:\/\/modern.realhomes.io\/wp-content\/themes\/realhomes\/assets\/modern\/images\/map\/close.png"
+      };
+                            /* ]]> */
+    </script>
+
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/property-google-map.js?ver=4.0.2'
+      id='property-google-map-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/vendors/share.min.js?ver=4.0.2'
+      id='share-js-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/property-share.js?ver=4.0.2'
+      id='property-share-js'></script>
+    <script type='text/javascript' id='property-share-js-after'>
+      (function ($) {
+        'use strict';
+        $(document).ready(function () {
+          $(window).on('load', function () {
+            var shareThisDiv = $('.share-this');
+            shareThisDiv.addClass('realhomes-line-social-share-enabled');
+            shareThisDiv.find('ul').append('<li class="entypo-line" id="realhomes-line-social-share"><i class="fab fa-line"></i></li>');
+          });
+          $(document).on('click', '#realhomes-line-social-share', function () {
+            window.open(
+              'https://social-plugins.line.me/lineit/share?url=' + encodeURIComponent(window.location.href),
+              '_blank',
+              'location=yes,height=570,width=520,scrollbars=yes,status=yes'
+            );
+          });
+        });
+      })(jQuery);
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/property-detail.js?ver=4.0.2'
+      id='property-detail-custom-js'></script>
+    <script type='text/javascript' id='inspiry-search-js-extra'>
+      /* <![CDATA[ */
+      var localizedSearchParams = {
+        "rent_slug": "for-rent"
+      };
+      var frontEndAjaxUrl = {
+        "sfoiajaxurl": "https:\/\/modern.realhomes.io\/wp-admin\/admin-ajax.php"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/inspiry-search-form.js?ver=4.0.2'
+      id='inspiry-search-js'></script>
+    <script type='text/javascript'
+      src='//www.google.com/recaptcha/api.js?render=6LeOcdcUAAAAAIJAhrwkdJ0j_jV-LiUNayq4pScm&#038;onload=loadInspiryReCAPTCHA&#038;ver=4.0.2'
+      id='inspiry-google-recaptcha-js'></script>
+    <script type='text/javascript' id='custom-js-extra'>
+      /* <![CDATA[ */
+      var localizeSelect = {
+        "select_noResult": "No Results Found!"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/custom.js?ver=4.0.2'
+      id='custom-js'></script>
+    <script type='text/javascript' id='ajax-search-js-extra'>
+      /* <![CDATA[ */
+      var localized = {
+        "additionalFields": [],
+        "mapService": "googlemaps"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/assets/modern/scripts/js/ajax-search.js?ver=4.0.2'
+      id='ajax-search-js'></script>
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2'
+      id='jquery-ui-core-js'></script>
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/jquery/ui/tooltip.min.js?ver=1.13.2'
+      id='jquery-ui-tooltip-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/jquery.barrating.min.js?ver=4.0.2'
+      id='rh-jquery-bar-rating-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/inspiry-login.js?ver=4.0.2'
+      id='inspiry-login-js'></script>
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-includes/js/comment-reply.min.js?ver=6.1.1'
+      id='comment-reply-js'></script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/compare-properties.js?ver=4.0.2'
+      id='compare-js-js'></script>
+    <script type='text/javascript' src='vendors.js' id='vendors-js-js'></script>
+
+    <script type='text/javascript' id='realhomes-locations-js-extra'>
+      /* <![CDATA[ */
+      var realhomesLocationsData = {
+        "any_text": "Any",
+        "any_value": "any",
+        "select_names": ["location", "child-location", "grandchild-location", "great-grandchild-location"],
+        "select_count": "1",
+        "locations_in_params": [],
+        "multi_select_locations": "yes",
+        "all_locations": [{
+          "term_id": 36,
+          "name": "Miami",
+          "slug": "miami",
+          "parent": 0,
+          "count": 8,
+          "children": [{
+            "term_id": 48,
+            "name": "Doral",
+            "slug": "doral",
+            "parent": 36,
+            "count": 1,
+            "children": []
+          }, {
+            "term_id": 49,
+            "name": "Little Havana",
+            "slug": "little-havana",
+            "parent": 36,
+            "count": 3,
+            "children": []
+          }, {
+            "term_id": 39,
+            "name": "Perrine",
+            "slug": "perrine",
+            "parent": 36,
+            "count": 1,
+            "children": []
+          }]
+        }]
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/locations.js?ver=4.0.2'
+      id='realhomes-locations-js'></script>
+    <script type='text/javascript' id='common-custom-js-extra'>
+      /* <![CDATA[ */
+      var localizeSelect = {
+        "select_noResult": "No Results Found!",
+        "ajax_url": "https:\/\/modern.realhomes.io\/wp-admin\/admin-ajax.php",
+        "page_template": "",
+        "searching_string": "Searching...",
+        "loadingMore": "Loading more results..."
+      };
+      var similarPropertiesData = {
+        "design": "modern",
+        "propertyId": "45",
+        "propertiesPerPage": "2"
+      };
+                            /* ]]> */
+    </script>
+    <script type='text/javascript'
+      src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/common-custom.js?ver=4.0.2'
+      id='common-custom-js'></script>
+    <script type='text/javascript' id='inspiry-cfos-js-js-extra'>
+      /* <![CDATA[ */
+      var inspiryUtilsPath = {
+        "stylesheet_directory": "https:\/\/modern.realhomes.io\/wp-content\/themes\/realhomes\/common\/js\/utils.js"
+      };
+                            /* ]]> */
+    </script>
+
+    <script type='text/javascript' src='https://modern.b-cdn.net/wp-content/themes/realhomes/common/js/cfos.js?ver=4.0.2'
+      id='inspiry-cfos-js-js'></script>
+    <script type='text/javascript' defer
+      src='https://modern.b-cdn.net/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.1'
+      id='mc4wp-forms-api-js'></script>
+
+      <script>
+        (function (a, b, c) {
+          var d = a.history,
+            e = document,
+            f = navigator || {},
+            g = localStorage,
+            h = encodeURIComponent,
+            i = d.pushState,
+            k = function () {
+              return Math.random().toString(36)
+            },
+            l = function () {
+              return g.cid || (g.cid = k()), g.cid
+            },
+            m = function (r) {
+              var s = [];
+              for (var t in r) r.hasOwnProperty(t) && void 0 !== r[t] && s.push(h(t) + "=" + h(r[t]));
+              return s.join("&")
+            },
+            n = function (r, s, t, u, v, w, x) {
+              var z = "https://www.google-analytics.com/collect",
+                A = m({
+                  v: "1",
+                  ds: "web",
+                  aip: c.anonymizeIp ? 1 : void 0,
+                  tid: b,
+                  cid: l(),
+                  t: r || "pageview",
+                  sd: c.colorDepth && screen.colorDepth ? screen.colorDepth + "-bits" : void 0,
+                  dr: e.referrer || void 0,
+                  dt: e.title,
+                  dl: e.location.origin + e.location.pathname + e.location.search,
+                  ul: c.language ? (f.language || "").toLowerCase() : void 0,
+                  de: c.characterSet ? e.characterSet : void 0,
+                  sr: c.screenSize ? (a.screen || {}).width + "x" + (a.screen || {}).height : void 0,
+                  vp: c.screenSize && a.visualViewport ? (a.visualViewport || {}).width + "x" + (a.visualViewport || {}).height : void 0,
+                  ec: s || void 0,
+                  ea: t || void 0,
+                  el: u || void 0,
+                  ev: v || void 0,
+                  exd: w || void 0,
+                  exf: "undefined" != typeof x && !1 == !!x ? 0 : void 0
+                });
+              if (f.sendBeacon) f.sendBeacon(z, A);
+              else {
+                var y = new XMLHttpRequest;
+                y.open("POST", z, !0), y.send(A)
+              }
+            };
+          d.pushState = function (r) {
+            return "function" == typeof d.onpushstate && d.onpushstate({
+              state: r
+            }), setTimeout(n, c.delay || 10), i.apply(d, arguments)
+          }, n(), a.ma = {
+            trackEvent: function o(r, s, t, u) {
+              return n("event", r, s, t, u)
+            },
+            trackException: function q(r, s) {
+              return n("exception", null, null, null, null, r, s)
+            }
+          }
+        })(window, "UA-31893023-21", {
+          anonymizeIp: !0,
+          colorDepth: !0,
+          characterSet: !0,
+          screenSize: !0,
+          language: !0
+        })
+      </script>
+
+    <title>React App</title>
+  </head>
+  <body id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    
+  </body>
+</html>

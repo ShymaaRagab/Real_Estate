@@ -1,0 +1,74 @@
+.buy {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s,
+    transform var(--e-transform-transition-duration, 0.4s);
+  .buy-box {
+    background-size: auto;
+    background-image: url(https://rhheaderthree.b-cdn.net/wp-content/plugins/realhomes-elementor-addon/assets/images/cta-bg.jpg);
+    background-position: center 35px;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    padding: 200px 100px;
+    background-attachment: fixed;
+    .buy-top {
+      width: 60%;
+      margin: auto;
+      p {
+        color: #fff;
+      }
+      h3 {
+        color: #fff;
+        font-size: 36px;
+        line-height: 1.5;
+        font-weight: 500;
+      }
+    }
+    .buy-bottom {
+      margin-bottom: 5px;
+      transition: all 0.2s ease-in-out;
+      a {
+        display: inline-block;
+        color: #fff;
+        font-size: 15px;
+        padding: 15px 20px;
+        text-align: center;
+        outline: 0;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 5px;
+        line-height: 18px;
+        margin: 10px;
+        &:first-child {
+          background-color: #ea723d;
+          &:hover {
+            background: rgba(#ea723d, 0.8);
+            color: #fff;
+          }
+        }
+        &:last-child {
+          background-color: rgba(255, 255, 255, 0.25);
+          &:hover {
+            background: rgba(255, 255, 255, 0.4);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(max-width:700px){
+  .buy{
+    .buy-box{
+      padding: 200px 0 !important;
+    }
+    .buy-top{
+      width: 90% !important;
+    }
+  }
+}

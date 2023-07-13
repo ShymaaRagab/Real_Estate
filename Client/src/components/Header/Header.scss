@@ -1,0 +1,203 @@
+.header {
+  background-color: #0b8278;
+  padding: 0 20px 66px;
+  .header-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 1.5rem;
+    .h-logo {
+      margin-right: 50px;
+    }
+    .h-links {
+      flex: 1;
+      ul {
+        display: flex;
+        justify-content: flex-start; 
+        & > li {
+          margin-right: 25px;
+          & > a {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            position: relative;
+            color: #fff;
+            opacity: 0.7;
+            transition: 0.2s all;
+          }
+        }
+        li {
+          display: inline-block;
+          font-size: 2rem;
+          font-weight: 400;
+          position: relative;
+          border-bottom: 0;
+          border-color: #ea723d;
+          ul {
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.2s all ease-in-out;
+            border-top: 3px solid #ea723d;
+            padding: 2rem 0;
+            min-width: 150px;
+            z-index: 999999;
+            position: absolute;
+            top: 100%;
+            background: #fff;
+            left: 0;
+            top: 25px;
+            flex-direction: column;
+            li {
+              width: 100%;
+              display: block;
+              font-size: 2rem;
+              font-weight: 400;
+              position: relative;
+              padding: 7px 10px;
+              a {
+                color: #54595a;
+                transition: 0.4s;
+              }
+              &:hover {
+                background-color: opacify($color: #ccc, $amount: 0.1%);
+              }
+              &:hover a {
+                transition: 0.4s;
+                color: #000 !important;
+                font-weight: 600;
+              }
+            }
+          }
+          &:hover ul {
+            opacity: 1 !important;
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .h-user {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        li {
+          display: flex;
+          color: #fff;
+          
+          svg{
+            display: block;
+            font-size: 3.5rem;
+            cursor: pointer;
+          }
+          button {
+            border-color: #fff;
+            background-color: transparent;
+            padding: 7px 10px;
+            color: #fff;
+            border: 1px solid;
+            font-size: 2rem;
+            cursor: pointer;
+          }
+        }
+        .profile-button{
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+        }
+        svg {
+          display: none;
+        }
+      }
+    }
+    &.header-scroll{
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000000;
+      right: 0;
+      padding: 0px 20px;
+      transition: all .4s ease-in-out;
+      .h-links ul {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .App {
+    position: relative;
+    width: 100%;
+  }
+  .header {
+    position: absolute;
+    background-color: transparent;
+    z-index: 10000000;
+    left: 0;
+    right: 0;
+    top: 0;
+    .header-box {
+      padding-top: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .h-links {
+      position: fixed;
+      right: 10px;
+      top: 50px;
+      transform: translateY(-400px) !important;
+      transition: 0.4s ease-in-out;
+      width: 220px;
+
+      &.active {
+        transform: translateY(10px) !important;
+        z-index: 100 !important;
+        background-color: #fff;
+      }
+      ul {
+        display: flex !important;
+        flex-direction: column;
+        background-color: #fff;
+        padding-left: 0;
+        padding: 20px 20px;
+        li {
+          padding: 4px 8px;
+          a {
+            color: #54595a !important;
+          }
+        }
+        &:hover ul {
+          opacity: 0 !important;
+          visibility: hidden !important;
+        }
+      }
+    }
+    .h-user {
+      svg {
+        display: block !important;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+// @media(max-width:)
+
+@media (max-width: 500px) {
+  .header {
+    .header-box {
+      flex-direction: column;
+      justify-content: center;
+      .h-links{
+        &.active {
+        transform: translateY(75px) !important;
+        z-index: 100 !important;
+        background-color: #fff;
+      }
+      }
+    }
+  }
+}

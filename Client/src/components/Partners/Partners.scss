@@ -1,0 +1,26 @@
+.partners {
+  padding: 50px 0;
+  .container {
+    width: 80%;
+    margin: auto;
+    .top {
+      text-align: center;
+      span {
+        color: #0b8278;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    li{
+        flex: 1;
+    }
+  }
+}
